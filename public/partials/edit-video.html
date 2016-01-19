@@ -1,0 +1,21 @@
+<h1>Editing {{video.title}}</h1>
+
+<div ng-controller="EditVideoCtrl as ctrl">
+<form name="ctrl.myForm">
+    <div class="form-group" show-errors show-valid>
+        <label class="control-label">Title</label>
+        <input class="form-control" name="title" ng-model="video.title" placeholder="Video title" required></input>
+        <p class="help-block" ng-if="ctrl.myForm.title.$error.required">The video's title is required</p>
+    </div>
+    <div class="form-group" show-errors show-valid>
+        <label class="control-label">Description</label>
+        <textarea class="form-control" name="description" ng-model="video.description" placeholder="Video description" required></textarea>
+        <p class="help-block" ng-if="ctrl.myForm.description.$error.required">The video's description is required</p>
+    </div>
+    <div class="form-group" show-errors show-valid>
+        <label class="control-label">Release Year</label>
+        <input class="form-control" name="release_year" ng-model="video.release_year" type="number" placeholder="Video release year" required></input>
+        <p class="help-block" ng-if="ctrl.myForm.release_year.$error.required">The video's release year is required</p>
+    </div>
+    <input type="button" value="Save" class="btn btn-primary" ng-click="ctrl.saveChanges()"></input>
+</form>
