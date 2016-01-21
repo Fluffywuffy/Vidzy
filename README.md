@@ -14,6 +14,10 @@ I never follow a tutorial exactly the same way it's shown; I always add some add
 
 Since this project uses Bootstrap, I followed [another tutorial](http://blog.yodersolutions.com/bootstrap-form-validation-done-right-in-angularjs/) on how to properly run validation on field values in Angular, which is something the original tutorial didn't cover.
 
+###Configuration###
+
+The **config** folder contains an example db.js file, which can be used to specify a DB url. This can be a localhost url, or a remote url.
+
 ###License###
 
 Feel free to do whatever you want with this repo, commercial or noncommercial, with or without credit, granted that it's modified beforehand.
