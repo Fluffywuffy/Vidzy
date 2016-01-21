@@ -1,8 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
+var dbConfig = require('../config/db');
+
 var monk = require('monk');
-var db = monk('localhost:27017/vidzy');
+var db = monk(dbConfig.url);
 
 router.get('/', function(req, res) {
   var coll = db.get('videos');

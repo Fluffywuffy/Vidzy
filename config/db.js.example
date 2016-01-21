@@ -1,0 +1,3 @@
+module.exports = {
+  url : 'mongodb://<user>:<pass>@<db_host>:<port>/<db_name>'
+}
